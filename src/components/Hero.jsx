@@ -15,10 +15,14 @@ function Hero() {
           absolute
           bottom-0
           right-0
-          z-20
+          z-0
           h-full
           w-auto
-          max-w-none
+          max-w-[62%]
+          object-contain
+          object-bottom
+          sm:z-20
+          sm:max-w-none
         "
       />
 
@@ -27,9 +31,10 @@ function Hero() {
         className="
           relative
           z-10
-          w-[48%]
+          w-[58%]
           pt-[50px]
           pl-[16px]
+          sm:w-[48%]
         "
       >
         {/* Título */}
