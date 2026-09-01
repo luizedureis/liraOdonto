@@ -1,23 +1,26 @@
-import { HeartHandshake, ShieldCheck, Sparkles, Smile } from "lucide-react";
+import atendimentoHumanizado from "../assets/atendimentoHumanizado.png";
+import especialistaQualificado from "../assets/especialistaQualificado.png";
+import tecAvancada from "../assets/tecAvancada.png";
+import resultaTransfor from "../assets/resultaTransfor.png";
 
 const items = [
   {
-    icon: HeartHandshake,
+    icon: atendimentoHumanizado,
     title: "Atendimento Humanizado",
     description: "Você é único. Seu tratamento também.",
   },
   {
-    icon: ShieldCheck,
+    icon: especialistaQualificado,
     title: "Especialistas Qualificados",
     description: "Equipe experiente e atualizada.",
   },
   {
-    icon: Sparkles,
+    icon: tecAvancada,
     title: "Tecnologia Avançada",
     description: "Equipamentos modernos.",
   },
   {
-    icon: Smile,
+    icon: resultaTransfor,
     title: "Resultados que Transformam",
     description: "Devolvemos sua autoestima.",
   },
@@ -25,12 +28,12 @@ const items = [
 
 function WhyChooseUs() {
   return (
-    <section className="relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-6 pb-10 pt-8">
+    <section className="relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-9 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
       <p
         className="
           text-center
           font-['IBM_Plex_Sans']
-          text-[9px]
+          text-[10px]
           font-medium
           text-[#3E6D70]
         "
@@ -51,8 +54,8 @@ function WhyChooseUs() {
         <span className="text-[#127C82]">faz a diferença</span>
       </h2>
 
-      <div className="relative mt-[28px] grid grid-cols-2 gap-[18px]">
-        {items.map(({ icon: Icon, title, description }) => (
+      <div className="relative mt-[28px] grid grid-cols-2 gap-[22px]">
+        {items.map(({ icon, title, description }) => (
           <div
             key={title}
             className="
@@ -68,7 +71,7 @@ function WhyChooseUs() {
               shadow-[0_0_10px_4px_rgba(0,0,0,0.10)]
             "
           >
-            <Icon className="h-[38px] w-[38px] text-[#066165]" />
+            <img src={icon} alt="" className="h-[38px] w-[38px] object-contain" />
 
             <h3
               className="
