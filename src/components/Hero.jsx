@@ -1,4 +1,4 @@
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, User } from "lucide-react";
 
 import dentista from "../assets/dentista.png";
 import whatsapp from "../assets/whatsapp.png";
@@ -109,7 +109,7 @@ function Hero() {
       <div
         className="
           absolute
-          bottom-[20px]
+          bottom-[45px]
           left-[16px]
           z-10
           flex
@@ -118,7 +118,7 @@ function Hero() {
           whitespace-nowrap
         "
       >
-        <span className="text-[#066165]">♙</span>
+        <User className="h-[12px] w-[12px] text-[#066165]" />
 
         <p className="font-['IBM_Plex_Sans'] text-[10px] text-[#066165]">
           Mais de 500 sorrisos transformados
