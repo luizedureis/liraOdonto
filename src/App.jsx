@@ -2,6 +2,7 @@ import AddressBar from "./components/AddressBar";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import WhyChooseUs from "./components/WhyChooseUs";
+import OurHistory from "./components/OurHistory";
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <WhyChooseUs />
+      <OurHistory />
       <main className="px-4">
         resto do site
       </main>
