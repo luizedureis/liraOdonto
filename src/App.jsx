@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import WhyChooseUs from "./components/WhyChooseUs";
 import OurHistory from "./components/OurHistory";
 import Testimonials from "./components/Testimonials";
+import Treatments from "./components/Treatments";
+import GoogleReviews from "./components/GoogleReviews";
 function App() {
   return (
     <>
@@ -13,7 +15,9 @@ function App() {
       <WhyChooseUs />
       <OurHistory />
       <Testimonials />
-      <main className="px-4">
+      <Treatments />
+      <GoogleReviews />
+      <main className="px-4 pt-8">
         resto do site
       </main>
     </>

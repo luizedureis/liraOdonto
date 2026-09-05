@@ -41,7 +41,7 @@ function PhotoBox({ src, label }) {
   }
 
   return (
-    <div className="relative flex aspect-[2/1] w-full items-center justify-center overflow-hidden rounded-[10px] bg-white/60">
+    <div className="relative flex aspect-[2/1] w-full items-center justify-center overflow-hidden rounded-[10px] bg-[#DCE8EA]">
       <ImageIcon className="h-[22px] w-[22px] text-[#066165]/40" />
       <span className="absolute bottom-[4px] left-1/2 -translate-x-1/2 font-['IBM_Plex_Sans'] text-[9px] text-[#066165]/60">
         {label}
@@ -60,7 +60,7 @@ function Testimonials() {
   const active = testimonials[current];
 
   return (
-    <section className="bg-white px-4 pb-10 pt-8">
+    <section className="bg-[#DCE8EA] px-4 pb-10 pt-8">
       <p className="font-['IBM_Plex_Sans'] text-[13px] font-semibold text-[#066165]">
         Sorrisos que inspiram
       </p>
@@ -80,7 +80,7 @@ function Testimonials() {
         <span className="text-[#127C82]">transformações reais.</span>
       </h2>
 
-      <div className="mt-[18px] rounded-[20px] bg-[#DCE8EA] p-[14px]">
+      <div className="mt-[18px] rounded-[20px] bg-white p-[14px] shadow-[0_2px_14px_rgba(0,0,0,0.10)]">
         <div className="grid grid-cols-2 gap-[10px]">
           <PhotoBox src={active.beforeImg} label="Antes" />
           <PhotoBox src={active.afterImg} label="Depois" />

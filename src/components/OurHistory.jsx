@@ -27,7 +27,7 @@ function OurHistory() {
   }, []);
 
   return (
-    <section className="bg-[#DCE8EA] px-4 pb-10 pt-8">
+    <section className="relative z-10 -mt-[24px] rounded-t-[24px] bg-[#DCE8EA] px-4 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
       <p className="font-['IBM_Plex_Sans'] text-[13px] font-semibold text-[#066165]">
         Nossa História
       </p>
