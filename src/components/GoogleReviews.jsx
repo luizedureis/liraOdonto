@@ -62,7 +62,7 @@ function ReviewCard({ name, time, text }) {
 
 function GoogleReviews() {
   return (
-    <section className="relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-4 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
+    <section id="avaliacoes" className="relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-4 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
       <p className="mx-auto flex w-fit items-center justify-center gap-[6px] rounded-full bg-[#DAF0E1] px-[8px] py-[3px] font-['IBM_Plex_Sans'] text-[11px] font-medium text-[#528F52]">
         <span className="flex h-[16px] w-[16px] items-center justify-center rounded-full bg-[#528F52]">
           <BadgeCheck className="h-[10px] w-[10px] text-white" />

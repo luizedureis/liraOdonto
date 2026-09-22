@@ -5,7 +5,7 @@ import whatsapp from "../assets/whatsapp.png";
 
 function Hero() {
   return (
-    <section className="relative w-full h-[400px] overflow-hidden bg-[#DCE8EA]">
+    <section id="inicio" className="relative w-full h-[400px] overflow-hidden bg-[#DCE8EA]">
 
       {/* Imagem da dentista */}
       <img

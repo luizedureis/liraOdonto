@@ -28,7 +28,7 @@ const items = [
 
 function WhyChooseUs() {
   return (
-    <section className="relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-9 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
+    <section id="diferenciais" className="relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-9 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
       <p
         className="
           text-center

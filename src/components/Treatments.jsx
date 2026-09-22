@@ -59,7 +59,7 @@ function TreatmentCard({ image, title, description }) {
 
 function Treatments() {
   return (
-    <section className="bg-[#DCE8EA] px-4 pb-10 pt-8">
+    <section id="tratamentos" className="bg-[#DCE8EA] px-4 pb-10 pt-8">
       <div className="flex flex-col gap-[16px]">
         {treatments.map((t) => (
           <TreatmentCard key={t.title} {...t} />

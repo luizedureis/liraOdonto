@@ -60,7 +60,7 @@ function Testimonials() {
   const active = testimonials[current];
 
   return (
-    <section className="bg-[#DCE8EA] px-4 pb-10 pt-8">
+    <section id="depoimentos" className="bg-[#DCE8EA] px-4 pb-10 pt-8">
       <p className="font-['IBM_Plex_Sans'] text-[13px] font-semibold text-[#066165]">
         Sorrisos que inspiram
       </p>
