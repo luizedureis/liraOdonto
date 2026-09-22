@@ -1,7 +1,6 @@
 import { CalendarDays, User } from "lucide-react";
 
 import dentista from "../assets/dentista.png";
-import whatsapp from "../assets/whatsapp.png";
 
 function Hero() {
   return (
@@ -95,7 +94,10 @@ function Hero() {
 
 
       {/* Botão preso na parte inferior */}
-      <button
+      <a
+        href="https://api.whatsapp.com/send?phone=558321812468"
+        target="_blank"
+        rel="noreferrer"
         className="
           absolute
           bottom-[70px]
@@ -124,7 +126,7 @@ function Hero() {
         <CalendarDays className="h-[70%] w-[70%] lg:h-[22px] lg:w-[22px]" />
 
         Agende sua avaliação
-      </button>
+      </a>
 
       {/* Texto inferior preso no fundo */}
       <div
@@ -148,34 +150,6 @@ function Hero() {
           Mais de 500 sorrisos transformados
         </p>
       </div>
-
-      {/* WhatsApp */}
-      <a
-  href="https://api.whatsapp.com/send?phone=558321812468"
-  target="_blank"
-  rel="noreferrer"
-  className="
-    absolute
-    bottom-[18px]
-    right-[12px]
-    z-30
-    flex
-    h-[54px]
-    w-[54px]
-    items-center
-    justify-center
-    lg:bottom-[32px]
-    lg:right-[32px]
-    lg:h-[72px]
-    lg:w-[72px]
-  "
->
-  <img
-    src={whatsapp}
-    alt="WhatsApp"
-    className="w-full h-full object-contain"
-  />
-</a>
 
     </section>
   );
