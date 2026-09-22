@@ -1,16 +1,7 @@
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/liraodontologobranca.png";
-
-const links = [
-  { label: "Início", href: "/#inicio" },
-  { label: "Diferenciais", href: "/#diferenciais" },
-  { label: "Nossa História", href: "/#historia" },
-  { label: "Depoimentos", href: "/#depoimentos" },
-  { label: "Tratamentos", href: "/#tratamentos" },
-  { label: "Avaliações", href: "/#avaliacoes" },
-  { label: "Contato", href: "/#contato" },
-];
+import { navLinks } from "../data/navLinks";
 
 function MobileMenu({ open, onClose }) {
   return (
@@ -48,7 +39,7 @@ function MobileMenu({ open, onClose }) {
         </div>
 
         <ul className="mt-[36px] flex flex-col gap-[24px]">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <li key={link.href}>
               <Link
                 to={link.href}

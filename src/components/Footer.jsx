@@ -35,58 +35,58 @@ function Footer() {
     <footer
       id="contato"
       ref={reveal.ref}
-      className={`bg-[#054B4E] px-4 pb-6 pt-10 text-white ${reveal.className}`}
+      className={`relative z-10 -mt-[24px] rounded-t-[24px] bg-[#054B4E] px-4 pb-6 pt-10 text-white shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)] md:px-[48px] lg:px-[64px] lg:pb-[32px] lg:pt-[56px] ${reveal.className}`}
     >
-      <div className="flex flex-col items-center gap-[24px] text-center">
-        <img src={logo} alt="Lira Odontologia" className="h-[70px] w-auto" />
+      <div className="flex flex-col items-center gap-[24px] text-center lg:mx-auto lg:max-w-[1200px] lg:flex-row lg:items-start lg:justify-between lg:text-left">
+        <img src={logo} alt="Lira Odontologia" className="h-[70px] w-auto lg:h-[90px]" />
 
         <div>
-          <p className="font-['IBM_Plex_Sans'] text-[11px] font-semibold uppercase tracking-[0.08em] text-white/70">
+          <p className="font-['IBM_Plex_Sans'] text-[11px] font-semibold uppercase tracking-[0.08em] text-white/70 lg:text-[13px]">
             Acompanhe nas redes
           </p>
 
-          <div className="mt-[10px] flex items-center justify-center gap-[10px]">
+          <div className="mt-[10px] flex items-center justify-center gap-[10px] lg:justify-start lg:gap-[14px]">
             <a
               href="https://www.instagram.com/liraodontologiajoaopessoa?igsh=M3dhYzE2MXE4eDVn&utm_source=qr"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
-              className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white/10"
+              className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white/10 lg:h-[44px] lg:w-[44px]"
             >
-              <InstagramIcon className="h-[16px] w-[16px] text-white" />
+              <InstagramIcon className="h-[16px] w-[16px] text-white lg:h-[20px] lg:w-[20px]" />
             </a>
 
             <a
               href="#"
               aria-label="Facebook"
-              className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white/10"
+              className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white/10 lg:h-[44px] lg:w-[44px]"
             >
-              <FacebookIcon className="h-[16px] w-[16px] text-white" />
+              <FacebookIcon className="h-[16px] w-[16px] text-white lg:h-[20px] lg:w-[20px]" />
             </a>
           </div>
         </div>
 
         <div>
-          <p className="font-['IBM_Plex_Serif'] text-[13px] font-semibold text-white">
+          <p className="font-['IBM_Plex_Serif'] text-[13px] font-semibold text-white lg:text-[17px]">
             Atendimento
           </p>
 
-          <div className="mt-[10px] flex flex-col items-center gap-[10px]">
+          <div className="mt-[10px] flex flex-col items-center gap-[10px] lg:items-start lg:gap-[14px]">
             <a
               href="https://api.whatsapp.com/send?phone=558321812468"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-[6px]"
             >
-              <Phone className="h-[13px] w-[13px] text-white/70" />
-              <p className="font-['IBM_Plex_Sans'] text-[12px] text-white/80">
+              <Phone className="h-[13px] w-[13px] text-white/70 lg:h-[16px] lg:w-[16px]" />
+              <p className="font-['IBM_Plex_Sans'] text-[12px] text-white/80 lg:text-[15px]">
                 (83) 2181-2468 (WhatsApp e ligação)
               </p>
             </a>
 
             <div className="flex items-start gap-[6px]">
-              <Clock className="mt-[2px] h-[13px] w-[13px] shrink-0 text-white/70" />
-              <div className="text-left font-['IBM_Plex_Sans'] text-[12px] leading-[17px] text-white/80">
+              <Clock className="mt-[2px] h-[13px] w-[13px] shrink-0 text-white/70 lg:h-[16px] lg:w-[16px]" />
+              <div className="text-left font-['IBM_Plex_Sans'] text-[12px] leading-[17px] text-white/80 lg:text-[15px] lg:leading-[21px]">
                 <p>Segunda-feira: 09h às 18h</p>
                 <p>Terça a sexta-feira: 08h às 18h</p>
                 <p>Sábado: apenas no 2º sábado do mês</p>
@@ -97,10 +97,10 @@ function Footer() {
               href="https://maps.app.goo.gl/6rYs5nGPVHsDRiay7?g_st=iw"
               target="_blank"
               rel="noreferrer"
-              className="flex items-start gap-[6px] px-[24px]"
+              className="flex items-start gap-[6px] px-[24px] lg:px-0"
             >
-              <MapPin className="mt-[2px] h-[13px] w-[13px] shrink-0 text-white/70" />
-              <p className="font-['IBM_Plex_Sans'] text-[12px] leading-[16px] text-white/80">
+              <MapPin className="mt-[2px] h-[13px] w-[13px] shrink-0 text-white/70 lg:h-[16px] lg:w-[16px]" />
+              <p className="font-['IBM_Plex_Sans'] text-[12px] leading-[16px] text-white/80 lg:text-[15px] lg:leading-[21px]">
                 Rua Josefa Taveira, 1327, loja 102, Mangabeira, João Pessoa -
                 PB, CEP: 58055-000
               </p>
@@ -112,13 +112,13 @@ function Footer() {
       <button
         type="button"
         onClick={scrollToTop}
-        className="mx-auto mt-[24px] flex items-center gap-[6px] font-['IBM_Plex_Sans'] text-[11px] font-semibold text-white/70"
+        className="mx-auto mt-[24px] flex items-center gap-[6px] font-['IBM_Plex_Sans'] text-[11px] font-semibold text-white/70 lg:text-[13px]"
       >
         <ArrowUp className="h-[13px] w-[13px]" />
         Ir para o topo
       </button>
 
-      <div className="mt-[24px] h-px w-full bg-white/15" />
+      <div className="mt-[24px] h-px w-full bg-white/15 lg:mx-auto lg:max-w-[1200px]" />
 
       <div className="mt-[16px] flex flex-col items-center gap-[4px] text-center">
         <p className="font-['IBM_Plex_Sans'] text-[10px] text-white/60">

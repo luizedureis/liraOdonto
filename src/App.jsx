@@ -9,13 +9,15 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <AddressBar />
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
-      </Routes>
-      <Footer />
+      <div className="lg:mx-auto lg:max-w-[1360px] lg:shadow-[0_0_60px_rgba(0,0,0,0.08)]">
+        <AddressBar />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }

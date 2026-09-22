@@ -34,7 +34,7 @@ function WhyChooseUs() {
     <section
       id="diferenciais"
       ref={reveal.ref}
-      className={`relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-9 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)] ${reveal.className}`}
+      className={`relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-9 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)] md:px-[48px] lg:px-[64px] lg:pb-[72px] lg:pt-[64px] ${reveal.className}`}
     >
       <p
         className="
@@ -43,6 +43,7 @@ function WhyChooseUs() {
           text-[10px]
           font-medium
           text-[#3E6D70]
+          lg:text-[15px]
         "
       >
         Por que escolher a Lira Odontologia?
@@ -55,13 +56,15 @@ function WhyChooseUs() {
           font-['IBM_Plex_Serif']
           text-[20px]
           font-normal
+          lg:mt-[12px]
+          lg:text-[36px]
         "
       >
         <span className="text-[#066165]">Cuidado que</span>{" "}
         <span className="text-[#127C82]">faz a diferença</span>
       </h2>
 
-      <div className="relative mt-[28px] grid grid-cols-2 gap-[22px]">
+      <div className="relative mt-[28px] grid grid-cols-2 gap-[22px] lg:mx-auto lg:mt-[48px] lg:max-w-[1200px] lg:grid-cols-4 lg:gap-[28px]">
         {items.map(({ icon, title, description }) => (
           <div
             key={title}
@@ -76,9 +79,13 @@ function WhyChooseUs() {
               py-[24px]
               text-center
               shadow-[0_0_10px_4px_rgba(0,0,0,0.10)]
+              lg:min-h-[280px]
+              lg:rounded-[18px]
+              lg:px-[20px]
+              lg:py-[36px]
             "
           >
-            <img src={icon} alt="" className="h-[38px] w-[38px] object-contain" />
+            <img src={icon} alt="" className="h-[38px] w-[38px] object-contain lg:h-[56px] lg:w-[56px]" />
 
             <h3
               className="
@@ -88,6 +95,9 @@ function WhyChooseUs() {
                 font-semibold
                 leading-[16px]
                 text-[#066165]
+                lg:mt-[20px]
+                lg:text-[17px]
+                lg:leading-[22px]
               "
             >
               {title}
@@ -101,6 +111,9 @@ function WhyChooseUs() {
                 text-[11px]
                 leading-[14px]
                 text-[#3E4E68]
+                lg:pt-[20px]
+                lg:text-[14px]
+                lg:leading-[19px]
               "
             >
               {description}

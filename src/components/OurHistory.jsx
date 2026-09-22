@@ -32,13 +32,14 @@ function OurHistory() {
     <section
       id="historia"
       ref={reveal.ref}
-      className={`relative z-10 -mt-[24px] rounded-t-[24px] bg-[#DCE8EA] px-4 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)] ${reveal.className}`}
+      className={`relative z-10 -mt-[24px] rounded-t-[24px] bg-[#DCE8EA] px-4 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)] md:px-[48px] lg:px-[64px] lg:pb-[72px] lg:pt-[64px] ${reveal.className}`}
     >
-      <p className="font-['IBM_Plex_Sans'] text-[13px] font-semibold text-[#066165]">
+      <div className="lg:mx-auto lg:max-w-[1200px]">
+      <p className="font-['IBM_Plex_Sans'] text-[13px] font-semibold text-[#066165] lg:text-[16px]">
         Nossa História
       </p>
 
-      <div className="mt-[4px] h-[2px] w-[36px] bg-[#066165]" />
+      <div className="mt-[4px] h-[2px] w-[36px] bg-[#066165] lg:w-[48px]" />
 
       <h2
         className="
@@ -48,20 +49,24 @@ function OurHistory() {
           font-normal
           leading-[26px]
           text-[#1E2D30]
+          lg:text-[36px]
+          lg:leading-[44px]
         "
       >
         Feita de propósito, cuidado e{" "}
         <span className="text-[#127C82]">transformação.</span>
       </h2>
 
-      <div className="mt-[16px] grid grid-cols-[1.1fr_1fr] items-stretch gap-[14px]">
-        <div className="flex flex-col gap-[12px]">
+      <div className="mt-[16px] grid grid-cols-[1.1fr_1fr] items-stretch gap-[14px] lg:mt-[32px] lg:gap-[48px]">
+        <div className="flex flex-col gap-[12px] lg:gap-[20px]">
           <p
             className="
               font-['IBM_Plex_Sans']
               text-[11px]
               leading-[15px]
               text-[#3E4E68]
+              lg:text-[16px]
+              lg:leading-[25px]
             "
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -75,6 +80,8 @@ function OurHistory() {
               text-[11px]
               leading-[15px]
               text-[#3E4E68]
+              lg:text-[16px]
+              lg:leading-[25px]
             "
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -88,6 +95,8 @@ function OurHistory() {
               text-[11px]
               leading-[15px]
               text-[#3E4E68]
+              lg:text-[16px]
+              lg:leading-[25px]
             "
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -96,7 +105,7 @@ function OurHistory() {
           </p>
         </div>
 
-        <div className="relative -mr-4 h-full min-h-[280px] w-[calc(100%+16px)] overflow-hidden rounded-l-[12px]">
+        <div className="relative -mr-4 h-full min-h-[280px] w-[calc(100%+16px)] overflow-hidden rounded-l-[12px] md:mr-0 md:w-full md:rounded-[16px] lg:min-h-[340px]">
           {slides.map((src, i) => (
             <img
               key={src}
@@ -134,6 +143,10 @@ function OurHistory() {
           px-[8px]
           py-[16px]
           shadow-[0_2px_10px_rgba(0,0,0,0.08)]
+          lg:mt-[40px]
+          lg:rounded-[20px]
+          lg:px-[24px]
+          lg:py-[32px]
         "
       >
         {stats.map((stat, i) => (
@@ -151,7 +164,7 @@ function OurHistory() {
             <img
               src={stat.icon}
               alt=""
-              className="h-[36px] w-[36px] object-contain"
+              className="h-[36px] w-[36px] object-contain lg:h-[52px] lg:w-[52px]"
             />
 
             <p
@@ -161,6 +174,8 @@ function OurHistory() {
                 text-[15px]
                 font-semibold
                 text-[#066165]
+                lg:mt-[14px]
+                lg:text-[24px]
               "
             >
               {stat.value}
@@ -173,12 +188,16 @@ function OurHistory() {
                 text-[9px]
                 leading-[11px]
                 text-[#3E4E68]
+                lg:mt-[6px]
+                lg:text-[13px]
+                lg:leading-[17px]
               "
             >
               {stat.label}
             </p>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

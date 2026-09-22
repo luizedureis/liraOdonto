@@ -42,18 +42,18 @@ function TreatmentCard({ image, title, description }) {
         )}
       </div>
 
-      <div className="px-[16px] pb-[16px] pt-[10px] text-center">
-        <h3 className="font-['IBM_Plex_Serif'] text-[20px] font-bold text-[#066165]">
+      <div className="px-[16px] pb-[16px] pt-[10px] text-center lg:px-[24px] lg:pb-[24px] lg:pt-[18px]">
+        <h3 className="font-['IBM_Plex_Serif'] text-[20px] font-bold text-[#066165] lg:text-[22px]">
           {title}
         </h3>
 
-        <p className="mt-[6px] font-['IBM_Plex_Sans'] text-[12px] leading-[15px] text-[#3E4E68]">
+        <p className="mt-[6px] font-['IBM_Plex_Sans'] text-[12px] leading-[15px] text-[#3E4E68] lg:mt-[10px] lg:text-[14px] lg:leading-[19px]">
           {description}
         </p>
 
         <a
           href="#"
-          className="mt-[10px] flex items-center justify-end gap-[7px] font-['IBM_Plex_Sans'] text-[12px] font-semibold text-[#066165]"
+          className="mt-[10px] flex items-center justify-end gap-[7px] font-['IBM_Plex_Sans'] text-[12px] font-semibold text-[#066165] lg:mt-[16px] lg:text-[14px]"
         >
           saiba mais
           <span aria-hidden="true">→</span>
@@ -65,8 +65,10 @@ function TreatmentCard({ image, title, description }) {
 
 function Treatments() {
   return (
-    <section id="tratamentos" className="bg-[#DCE8EA] px-4 pb-10 pt-8">
-      <div className="flex flex-col gap-[16px]">
+    <section id="tratamentos" className="bg-[#DCE8EA] px-4 pb-10 pt-8 md:px-[48px] lg:px-[64px] lg:pb-[72px] lg:pt-[64px]">
+      <div className="mx-auto mb-[32px] h-px w-[100px] bg-gradient-to-r from-transparent via-[#066165]/40 to-transparent lg:mb-[48px]" />
+
+      <div className="flex flex-col gap-[16px] lg:mx-auto lg:max-w-[1200px] lg:grid lg:grid-cols-3 lg:items-start lg:gap-[28px]">
         {treatments.map((t) => (
           <TreatmentCard key={t.title} {...t} />
         ))}
