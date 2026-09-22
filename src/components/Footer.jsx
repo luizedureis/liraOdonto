@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowUp, Clock, MapPin, Phone } from "lucide-react";
+import { useReveal } from "../hooks/useReveal";
 import logo from "../assets/liraodontologobranca.png";
 
 function InstagramIcon(props) {
@@ -24,12 +25,18 @@ function FacebookIcon(props) {
 }
 
 function Footer() {
+  const reveal = useReveal();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer id="contato" className="bg-[#054B4E] px-4 pb-6 pt-10 text-white">
+    <footer
+      id="contato"
+      ref={reveal.ref}
+      className={`bg-[#054B4E] px-4 pb-6 pt-10 text-white ${reveal.className}`}
+    >
       <div className="flex flex-col items-center gap-[24px] text-center">
         <img src={logo} alt="Lira Odontologia" className="h-[70px] w-auto" />
 

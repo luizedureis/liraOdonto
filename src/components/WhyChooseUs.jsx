@@ -1,3 +1,4 @@
+import { useReveal } from "../hooks/useReveal";
 import atendimentoHumanizado from "../assets/atendimentoHumanizado.png";
 import especialistaQualificado from "../assets/especialistaQualificado.png";
 import tecAvancada from "../assets/tecAvancada.png";
@@ -27,8 +28,14 @@ const items = [
 ];
 
 function WhyChooseUs() {
+  const reveal = useReveal();
+
   return (
-    <section id="diferenciais" className="relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-9 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
+    <section
+      id="diferenciais"
+      ref={reveal.ref}
+      className={`relative z-10 -mt-[24px] rounded-t-[24px] bg-white px-9 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)] ${reveal.className}`}
+    >
       <p
         className="
           text-center

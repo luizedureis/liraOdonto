@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+import { useReveal } from "../hooks/useReveal";
 import faxada from "../assets/historia/faxada.png";
 import interior from "../assets/historia/interior.png";
 import interior2 from "../assets/historia/interior2.png";
@@ -17,6 +18,7 @@ const stats = [
 
 function OurHistory() {
   const [current, setCurrent] = useState(0);
+  const reveal = useReveal();
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -27,7 +29,11 @@ function OurHistory() {
   }, []);
 
   return (
-    <section id="historia" className="relative z-10 -mt-[24px] rounded-t-[24px] bg-[#DCE8EA] px-4 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)]">
+    <section
+      id="historia"
+      ref={reveal.ref}
+      className={`relative z-10 -mt-[24px] rounded-t-[24px] bg-[#DCE8EA] px-4 pb-10 pt-8 shadow-[0_-5px_20px_0_rgba(0,0,0,0.25)] ${reveal.className}`}
+    >
       <p className="font-['IBM_Plex_Sans'] text-[13px] font-semibold text-[#066165]">
         Nossa História
       </p>

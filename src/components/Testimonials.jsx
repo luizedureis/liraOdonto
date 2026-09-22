@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote, Image as ImageIcon } from "lucide-react";
 
+import { useReveal } from "../hooks/useReveal";
 import antes1 from "../assets/sorrisos/antes1.png";
 import depois1 from "../assets/sorrisos/depois1.png";
 
@@ -52,6 +53,7 @@ function PhotoBox({ src, label }) {
 
 function Testimonials() {
   const [current, setCurrent] = useState(0);
+  const reveal = useReveal();
 
   const goTo = (index) => {
     setCurrent((index + testimonials.length) % testimonials.length);
@@ -60,7 +62,11 @@ function Testimonials() {
   const active = testimonials[current];
 
   return (
-    <section id="depoimentos" className="bg-[#DCE8EA] px-4 pb-10 pt-8">
+    <section
+      id="depoimentos"
+      ref={reveal.ref}
+      className={`bg-[#DCE8EA] px-4 pb-10 pt-8 ${reveal.className}`}
+    >
       <p className="font-['IBM_Plex_Sans'] text-[13px] font-semibold text-[#066165]">
         Sorrisos que inspiram
       </p>

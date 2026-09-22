@@ -1,5 +1,6 @@
 import { Image as ImageIcon } from "lucide-react";
 
+import { useReveal } from "../hooks/useReveal";
 import proteseProtocolo from "../assets/proteseProtocolo.png";
 import implanteUnitario from "../assets/implanteUnitario.png";
 import lenteContato from "../assets/lenteContato.png";
@@ -26,8 +27,13 @@ const treatments = [
 ];
 
 function TreatmentCard({ image, title, description }) {
+  const reveal = useReveal();
+
   return (
-    <div className="overflow-hidden rounded-[40px] bg-white shadow-[0_2px_14px_rgba(0,0,0,0.10)]">
+    <div
+      ref={reveal.ref}
+      className={`overflow-hidden rounded-[40px] bg-white shadow-[0_2px_14px_rgba(0,0,0,0.10)] ${reveal.className}`}
+    >
       <div className="flex aspect-[3/2] w-full items-center justify-center bg-white">
         {image ? (
           <img src={image} alt={title} className="h-full w-full object-contain" />
