@@ -147,7 +147,7 @@ function Hero() {
         <User className="h-[12px] w-[12px] text-[#066165] lg:h-[18px] lg:w-[18px]" />
 
         <p className="font-['IBM_Plex_Sans'] text-[10px] text-[#066165] lg:text-[15px]">
-          Mais de 500 sorrisos transformados
+          Mais de 5000 sorrisos transformados
         </p>
       </div>
 
