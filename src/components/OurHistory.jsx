@@ -4,11 +4,22 @@ import { useReveal } from "../hooks/useReveal";
 import faxada from "../assets/historia/faxada.png";
 import interior from "../assets/historia/interior.png";
 import interior2 from "../assets/historia/interior2.png";
+import atendimento from "../assets/historia/atendimento.jpg";
+import acolhimento from "../assets/historia/acolhimento.jpg";
+import planejamento from "../assets/historia/planejamento.jpg";
 import userIcon from "../assets/historia/user.png";
 import calendarIcon from "../assets/historia/calendar.png";
 import starIcon from "../assets/historia/star.png";
 
-const slides = [faxada, interior, interior2];
+// position: enquadramento do object-cover (fotos verticais focam na parte de cima)
+const slides = [
+  { src: faxada, position: "50% 50%" },
+  { src: interior, position: "50% 50%" },
+  { src: interior2, position: "50% 50%" },
+  { src: atendimento, position: "50% 35%" },
+  { src: acolhimento, position: "50% 25%" },
+  { src: planejamento, position: "50% 45%" },
+];
 
 const stats = [
   { icon: userIcon, value: "600+", label: "Sorrisos transformados" },
@@ -105,12 +116,13 @@ function OurHistory() {
           </p>
         </div>
 
-        <div className="relative -mr-4 h-full min-h-[280px] w-[calc(100%+16px)] overflow-hidden rounded-l-[12px] md:mr-0 md:w-full md:rounded-[16px] lg:min-h-[340px]">
-          {slides.map((src, i) => (
+        <div className="relative -mr-4 h-full min-h-[340px] w-[calc(100%+16px)] overflow-hidden rounded-l-[12px] md:mr-0 md:min-h-[420px] md:w-full md:rounded-[16px] lg:min-h-[520px]">
+          {slides.map(({ src, position }, i) => (
             <img
               key={src}
               src={src}
               alt=""
+              style={{ objectPosition: position }}
               className={`
                 absolute inset-0 h-full w-full object-cover
                 transition-opacity duration-700
