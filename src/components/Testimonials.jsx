@@ -35,14 +35,14 @@ const testimonials = [
 function PhotoBox({ src, label }) {
   if (src) {
     return (
-      <div className="aspect-[2/1] w-full overflow-hidden rounded-[10px]">
+      <div className="aspect-[2/1] w-full overflow-hidden rounded-[10px] lg:aspect-[16/10] lg:rounded-[16px]">
         <img src={src} alt={label} className="h-full w-full object-cover" />
       </div>
     );
   }
 
   return (
-    <div className="relative flex aspect-[2/1] w-full items-center justify-center overflow-hidden rounded-[10px] bg-[#DCE8EA]">
+    <div className="relative flex aspect-[2/1] w-full items-center justify-center overflow-hidden rounded-[10px] lg:aspect-[16/10] lg:rounded-[16px] bg-[#DCE8EA]">
       <ImageIcon className="h-[22px] w-[22px] text-[#066165]/40" />
       <span className="absolute bottom-[4px] left-1/2 -translate-x-1/2 font-['IBM_Plex_Sans'] text-[9px] text-[#066165]/60">
         {label}
@@ -91,42 +91,42 @@ function Testimonials() {
         <span className="text-[#127C82]">transformações reais.</span>
       </h2>
 
-      <div className="mt-[18px] rounded-[20px] bg-white p-[14px] shadow-[0_2px_14px_rgba(0,0,0,0.10)] lg:mx-auto lg:mt-[40px] lg:max-w-[820px] lg:p-[32px]">
-        <div className="grid grid-cols-2 gap-[10px] lg:gap-[20px]">
+      <div className="mt-[18px] rounded-[20px] bg-white p-[14px] shadow-[0_2px_14px_rgba(0,0,0,0.10)] lg:mx-auto lg:mt-[48px] lg:max-w-[1080px] lg:rounded-[28px] lg:p-[40px]">
+        <div className="grid grid-cols-2 gap-[10px] lg:gap-[24px]">
           <PhotoBox src={active.beforeImg} label="Antes" />
           <PhotoBox src={active.afterImg} label="Depois" />
         </div>
 
-        <div className="mt-[14px] grid grid-cols-[1fr_auto] gap-[10px] lg:mt-[28px] lg:gap-[24px]">
+        <div className="mt-[14px] grid grid-cols-[1fr_auto] gap-[10px] lg:mt-[32px] lg:gap-[24px]">
           <div>
-            <Quote className="h-[16px] w-[16px] text-[#066165] lg:h-[24px] lg:w-[24px]" />
+            <Quote className="h-[16px] w-[16px] text-[#066165] lg:h-[30px] lg:w-[30px]" />
 
-            <p className="mt-[4px] font-['IBM_Plex_Sans'] text-[11px] font-semibold leading-[13px] text-[#066165] lg:mt-[10px] lg:text-[16px] lg:leading-[20px]">
+            <p className="mt-[4px] font-['IBM_Plex_Sans'] text-[11px] font-semibold leading-[13px] text-[#066165] lg:mt-[12px] lg:text-[20px] lg:leading-[26px]">
               {active.treatment}
             </p>
 
-            <p className="mt-[2px] font-['IBM_Plex_Sans'] text-[9px] leading-[12px] text-[#3E4E68] lg:mt-[4px] lg:text-[13px] lg:leading-[18px]">
+            <p className="mt-[2px] font-['IBM_Plex_Sans'] text-[9px] leading-[12px] text-[#3E4E68] lg:mt-[6px] lg:text-[15px] lg:leading-[22px]">
               {active.treatmentNote}
             </p>
           </div>
 
-          <div className="max-w-[140px] text-right lg:max-w-[280px]">
-            <p className="font-['IBM_Plex_Serif'] text-[11px] italic leading-[14px] text-[#1E2D30] lg:text-[16px] lg:leading-[22px]">
+          <div className="max-w-[140px] text-right lg:max-w-[380px]">
+            <p className="font-['IBM_Plex_Serif'] text-[11px] italic leading-[14px] text-[#1E2D30] lg:text-[20px] lg:leading-[28px]">
               “{active.quote}”
             </p>
 
-            <p className="mt-[4px] font-['IBM_Plex_Sans'] text-[9px] text-[#3E6D70] lg:mt-[8px] lg:text-[13px]">
+            <p className="mt-[4px] font-['IBM_Plex_Sans'] text-[9px] text-[#3E6D70] lg:mt-[10px] lg:text-[15px]">
               - {active.author}
             </p>
           </div>
         </div>
 
-        <div className="mt-[14px] flex items-center justify-between lg:mt-[28px]">
+        <div className="mt-[14px] flex items-center justify-between lg:mt-[32px]">
           <button
             type="button"
             onClick={() => goTo(current - 1)}
             aria-label="Depoimento anterior"
-            className="flex h-[26px] w-[26px] items-center justify-center rounded-full border border-[#066165] text-[#066165] lg:h-[40px] lg:w-[40px]"
+            className="flex h-[26px] w-[26px] items-center justify-center rounded-full border border-[#066165] text-[#066165] lg:h-[48px] lg:w-[48px]"
           >
             <ChevronLeft className="h-[14px] w-[14px] lg:h-[20px] lg:w-[20px]" />
           </button>
@@ -148,7 +148,7 @@ function Testimonials() {
             type="button"
             onClick={() => goTo(current + 1)}
             aria-label="Próximo depoimento"
-            className="flex h-[26px] w-[26px] items-center justify-center rounded-full border border-[#066165] text-[#066165] lg:h-[40px] lg:w-[40px]"
+            className="flex h-[26px] w-[26px] items-center justify-center rounded-full border border-[#066165] text-[#066165] lg:h-[48px] lg:w-[48px]"
           >
             <ChevronRight className="h-[14px] w-[14px] lg:h-[20px] lg:w-[20px]" />
           </button>
