@@ -22,8 +22,8 @@ const slides = [
 ];
 
 const stats = [
-  { icon: userIcon, value: "600+", label: "Sorrisos transformados" },
-  { icon: calendarIcon, value: "10+", label: "Anos de experiência" },
+  { icon: userIcon, value: "5000+", label: "Sorrisos transformados" },
+  { icon: calendarIcon, value: "11", label: "Anos de experiência" },
   { icon: starIcon, value: "100%", label: "Comprometidos com você" },
 ];
 
