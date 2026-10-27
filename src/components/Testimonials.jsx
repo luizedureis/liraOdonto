@@ -2,17 +2,17 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote, Image as ImageIcon } from "lucide-react";
 
 import { useReveal } from "../hooks/useReveal";
-import antes1 from "../assets/sorrisos/antes1.png";
-import depois1 from "../assets/sorrisos/depois1.png";
+import antes2 from "../assets/sorrisos/antes2.png";
+import depois2 from "../assets/sorrisos/depois2.png";
 
 const testimonials = [
   {
-    beforeImg: null,
-    afterImg: null,
-    treatment: "Lente de contato dental",
-    treatmentNote: "Meu sorriso, minha confiança e autoestima.",
-    quote: "Me sinto muito mais confiante para sorrir hoje!",
-    author: "Carlos M.",
+    beforeImg: antes2,
+    afterImg: depois2,
+    treatment: "Implante dentário",
+    treatmentNote: null,
+    quote: null,
+    author: null,
   },
   {
     beforeImg: null,
@@ -95,30 +95,6 @@ function Testimonials() {
         <div className="grid grid-cols-2 gap-[10px] lg:gap-[24px]">
           <PhotoBox src={active.beforeImg} label="Antes" />
           <PhotoBox src={active.afterImg} label="Depois" />
-        </div>
-
-        <div className="mt-[14px] grid grid-cols-[1fr_auto] gap-[10px] lg:mt-[32px] lg:gap-[24px]">
-          <div>
-            <Quote className="h-[16px] w-[16px] text-[#066165] lg:h-[30px] lg:w-[30px]" />
-
-            <p className="mt-[4px] font-['IBM_Plex_Sans'] text-[11px] font-semibold leading-[13px] text-[#066165] lg:mt-[12px] lg:text-[20px] lg:leading-[26px]">
-              {active.treatment}
-            </p>
-
-            <p className="mt-[2px] font-['IBM_Plex_Sans'] text-[9px] leading-[12px] text-[#3E4E68] lg:mt-[6px] lg:text-[15px] lg:leading-[22px]">
-              {active.treatmentNote}
-            </p>
-          </div>
-
-          <div className="max-w-[140px] text-right lg:max-w-[380px]">
-            <p className="font-['IBM_Plex_Serif'] text-[11px] italic leading-[14px] text-[#1E2D30] lg:text-[20px] lg:leading-[28px]">
-              “{active.quote}”
-            </p>
-
-            <p className="mt-[4px] font-['IBM_Plex_Sans'] text-[9px] text-[#3E6D70] lg:mt-[10px] lg:text-[15px]">
-              - {active.author}
-            </p>
-          </div>
         </div>
 
         <div className="mt-[14px] flex items-center justify-between lg:mt-[32px]">
