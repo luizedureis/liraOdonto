@@ -34,7 +34,7 @@ function Header() {
         ))}
 
         <a
-          href="/#contato"
+          href="https://api.whatsapp.com/send?phone=558321812468"
           className="rounded-[8px] bg-[#066165] px-[20px] py-[12px] font-['IBM_Plex_Sans'] text-[14px] font-semibold text-white"
         >
           Agende sua avaliação

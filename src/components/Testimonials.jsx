@@ -7,8 +7,8 @@ import depois1 from "../assets/sorrisos/depois1.png";
 
 const testimonials = [
   {
-    beforeImg: antes1,
-    afterImg: depois1,
+    beforeImg: null,
+    afterImg: null,
     treatment: "Lente de contato dental",
     treatmentNote: "Meu sorriso, minha confiança e autoestima.",
     quote: "Me sinto muito mais confiante para sorrir hoje!",
