@@ -1,6 +1,6 @@
 import { CalendarDays, User } from "lucide-react";
 
-import dentista from "../assets/dentista.png";
+import dentista from "../assets/andreia.png";
 
 function Hero() {
   return (
