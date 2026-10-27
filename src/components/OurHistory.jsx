@@ -6,7 +6,6 @@ import interior from "../assets/historia/interior.png";
 import interior2 from "../assets/historia/interior2.png";
 import atendimento from "../assets/historia/atendimento.jpg";
 import acolhimento from "../assets/historia/acolhimento.jpg";
-import planejamento from "../assets/historia/planejamento.jpg";
 import userIcon from "../assets/historia/user.png";
 import calendarIcon from "../assets/historia/calendar.png";
 import starIcon from "../assets/historia/star.png";
@@ -21,7 +20,6 @@ const slides = [
   { src: carr1, position: "50% 45%" },
   { src: atendimento, position: "50% 35%" },
   { src: acolhimento, position: "50% 25%" },
-  { src: planejamento, position: "50% 45%" },
   { src: carr2, position: "50% 45%" },
 ];
 
