@@ -10,15 +10,19 @@ import planejamento from "../assets/historia/planejamento.jpg";
 import userIcon from "../assets/historia/user.png";
 import calendarIcon from "../assets/historia/calendar.png";
 import starIcon from "../assets/historia/star.png";
+import carr1 from "../assets/historia/carr1.jpeg";
+import carr2 from "../assets/historia/carr2.jpeg";
 
 // position: enquadramento do object-cover (fotos verticais focam na parte de cima)
 const slides = [
   { src: faxada, position: "50% 50%" },
   { src: interior, position: "50% 50%" },
   { src: interior2, position: "50% 50%" },
+  { src: carr1, position: "50% 45%" },
   { src: atendimento, position: "50% 35%" },
   { src: acolhimento, position: "50% 25%" },
   { src: planejamento, position: "50% 45%" },
+  { src: carr2, position: "50% 45%" },
 ];
 
 const stats = [
