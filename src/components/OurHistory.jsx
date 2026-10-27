@@ -80,9 +80,7 @@ function OurHistory() {
               lg:leading-[25px]
             "
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam.
+            A Lira Odontologia é uma clínica moderna localizada em João Pessoa (PB), especializada em implantes dentários, próteses fixas e prótese protocolo. 
           </p>
 
           <p
@@ -95,9 +93,7 @@ function OurHistory() {
               lg:leading-[25px]
             "
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam.
+            Com mais de 11 anos de experiência, a Dra. Andreia Lira, nossa especialista e fundadora da clínica e sua equipe de especialistas unem tecnologia, precisão e cuidado humano para transformar sorrisos e devolver autoestima aos pacientes. 
           </p>
 
           <p
@@ -110,9 +106,8 @@ function OurHistory() {
               lg:leading-[25px]
             "
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam.
+            
+Trabalhamos também com tratamento de canal, restauração, limpeza, tratamento periodontal, aparelho odontológico. Tudo em um só lugar.
           </p>
         </div>
 
