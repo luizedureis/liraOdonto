@@ -7,23 +7,42 @@ function Hero() {
     <section id="inicio" className="relative z-0 w-full h-[400px] md:h-[480px] lg:h-[620px] overflow-hidden bg-[#DCE8EA]">
 
       {/* Imagem da dentista */}
-      <img
-        src={dentista}
-        alt="Dentista"
-        className="
-          absolute
-          bottom-0
-          right-0
-          z-0
-          h-full
-          w-auto
-          max-w-[62%]
-          object-contain
-          object-bottom
-          sm:z-20
-          sm:max-w-none
-        "
-      />
+      <div className="absolute inset-0 z-0 pointer-events-none">
+  <img
+    src={dentista}
+    alt="Dentista"
+    className="
+      absolute
+      bottom-0
+      right-0
+      h-[85%]
+      w-auto
+      max-w-none
+      object-contain
+      object-bottom
+
+      sm:h-[90%]
+      md:h-full
+      lg:h-full
+    "
+  />
+
+  {/* Gradiente para integrar a imagem ao fundo */}
+  <div
+    className="
+      absolute
+      inset-0
+      z-10
+      bg-gradient-to-r
+      from-[#DCE8EA]
+      from-[35%]
+      via-[#DCE8EA]/90
+      via-[45%]
+      to-transparent
+      to-[70%]
+    "
+  />
+</div>
 
       {/* Conteúdo superior */}
       <div
